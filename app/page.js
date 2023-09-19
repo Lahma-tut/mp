@@ -1,95 +1,97 @@
-import Image from 'next/image'
 import styles from './page.module.css'
+
+export const metadata = {
+  title: 'Обо мне / maxpryadkin.ru',
+}
 
 export default function Home() {
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>app/page.js</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+    <div>
+        <h1>Обо мне</h1>
+        <section>
+          <div className={styles.about}>
+            <div className={styles.about_block}>
+              <div className={styles.about_block_column}>
+                <h2>Максим Прядкин</h2>
+                  <p>
+                    Привет, меня зовут Максим, веб—разработкой заинтересовался в 2011 году. 
+                    Изучил варианты и для старта выбрал WordPress, а в процессе освоил HTML, CSS.
+                  </p>
+                  <p>
+                    Далее узнал про SEO и начал продвигать сайты. Устроился на работу в веб—студию. 
+                    В процессе работы создавал, запускал и поддерживал проекты различной сложности.
+                  </p>
+                  <p>
+                    Изучил основы JavaScript, углубился в React и Next.js.
+                  </p>
+              </div>
+              <div className={styles.about_block_column}>
+                <div className={styles.about_block_column_img}>
+                  <div className={styles.about_block_column_img_about}></div>
+                </div>
+              </div>
+            </div>
+              <div className={styles.about_block_info}>
+                  <ul>
+                    <li>
+                    <span>Адрес: </span>
+                    <span>Санкт—Петербург</span>
+                    </li>
+                    <li>
+                      <span>Образование: </span>
+                      <span>Высшие, ВГАУ</span>
+                      </li>
+                      <li>
+                        <span>Увлечения: </span>
+                        <span>Музыкант</span>
+                      </li>
+                </ul>
+                </div>
+          </div>
+        </section>
+        <section>
+          <h3>Навыки</h3>
+          <div className={styles.skills_block}>
+            <div className={styles.skills_column}>
+              <h4>Junior Frontend—разработчик</h4>
+              <ul>
+                <li>React</li>
+                <li>Next.js</li>
+                <li>JavaScript</li>
+                <li>TypeScript</li>
+                <li>HTML5, CSS3</li>
+              </ul>
+            </div>
+            <div className={styles.skills_column}>
+              <h4>SEO—специалист</h4>
+              <ul>
+                <li>Внутренняя оптимизация</li>
+                <li>Семантическое ядро</li>
+                <li>Внешняя оптимизация</li>
+                <li>Аналитика</li>
+                <li>Email—маркетинг</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <section>
+        <h3>Контакты</h3>
+        <div className={styles.about_block_info}>
+        <ul>
+          <li>
+            <span>Телефон:</span>
+            <span>+7 (920) 469-12-86</span>
+          </li>
+          <li>
+            <span>Cоцсети:</span>
+            <span>maxpryadkin</span>
+            </li>
+          <li>
+            <span>Почта:</span>
+            <span>lahma@yandex.ru</span>
+            </li>
+        </ul>
         </div>
+        </section>
       </div>
-
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore the Next.js 13 playground.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
-  )
-}
+  )}
