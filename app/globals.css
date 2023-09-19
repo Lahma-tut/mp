@@ -66,14 +66,14 @@ header {
     padding: 10px 0px 10px 0px;
     margin: 20px 0px;
     letter-spacing: .4px;
-    
 }
 
 header a {
   color: #242424;
   text-decoration: none;
-  margin-right: 30px;
   transition-duration: .5s;
+  margin-right: 26px;
+  
 }
 
 header a:hover {
@@ -83,6 +83,12 @@ header a:hover {
 header a.active {
     color: red;
   }
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  line-height: 1.8em;
+}
 
 section {
 	margin: 15px 0px;

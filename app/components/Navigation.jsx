@@ -12,7 +12,7 @@ export const Navigation = () => {
     const pathname = usePathname();
     
     return (
-        <div>
+        <nav>
         { navItems.map((link) => {
             const isActive = pathname === link.href;
 
@@ -26,6 +26,6 @@ export const Navigation = () => {
                 </Link>
             )
         })}
-        </div>
+        </nav>
     )
 }
